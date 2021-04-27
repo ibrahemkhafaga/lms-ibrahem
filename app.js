@@ -15,7 +15,7 @@ function validateCourse(course) {
         code:Joi.string().regex(/^[a-zA-Z]{3}\d{3}$/).required(),
         description:Joi.string().max(200)
     }
-    return Joi.validate(course, schema);
+    return Joi.validate(course, schema); 
 }
 function validateCourse_update(course) {
     const schema = {
